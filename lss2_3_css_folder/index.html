@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <style>
+        .box {
+            position: sticky;
+            background: orange;
+            padding: 20px;
+            top: 0;
+            width: 100%;
+
+        }
+
+        .box2 {
+            position: relative;
+        }
+
+        .box3 {
+            position: fixed;
+            height: 50px;
+            width: 100px;
+            background: brown;
+            bottom: 50px;
+            right: 10px;
+            z-index: 999;
+        }
+
+        .box4 {
+            position: relative;
+            height: 500px;
+            width: 400px;
+            background: violet;
+        }
+
+        .box5 {
+            position: relative;
+            height: 300px;
+            width: 400px;
+
+            background: salmon;
+        }
+
+        .box6 {
+            height: 5000px;
+            width: 400px;
+            z-index: 1000;
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- CSS
+    selectors : bộ chọn
+        Display : Hiển thị ( 7 loai)
+        Bộ chọn tổ hợp
+            b + c {} :chọn phần tử c cùng cấp và kể ngay sau phần tử b ( Bộ chọn liền kề)
+            b ~ c {} :chọn tất cả phần tử c cùng cấp với b và nằm sau b ( Bộ chọn anh chị em liền kề)
+            a > b {} :chọn các phần tử b là cấp con đầu tiên của a ( bộ chọn con)
+            a b {} : chọn tất cả phần tử b bên trong phần tử a ( bộ chọn hậu duệ)
+        Position : Vị trí
+            static(tĩnh)
+            relative(Tương đối)
+            absolute(tuyệt đối)
+            fixed(cố định)
+            sticky(tương đối + tuyệt đối)
+        Z-index
+
+    -->
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis saepe porro possimus
+        velit dicta sunt, sint
+        deserunt aliquam culpa temporibus fuga repudiandae, incidunt voluptatem, neque modi libero dignissimos sit
+        nobis.</p>
+    <div class="box">
+        10
+    </div>
+    <div class="box2">
+        <div class="box3">
+            A
+        </div>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quidem repellendus alias? Enim nostrum asperiores
+        accusantium doloribus? Facilis quasi vitae quaerat! Quae voluptates ea minima suscipit magnam consequatur!
+        Natus, soluta.</p>
+    <h1 style="height: 300px;"><i class="fa-brands fa-google"></i>Nội dung</h1>
+    <h1 style="height: 700px;"><i class="fa-solid fa-bell"></i>A</h1>
+    <div class="box4">C</div>
+    <div class="box5">D</div>
+    <div class="box6">E</div>
+    <h2>ABC</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, nostrum vel mollitia eius praesentium eveniet
+        voluptates architecto debitis odio! Aut nisi quasi ut magni quas explicabo doloribus nulla dolores error.</p>
+    <div>
+        Box
+    </div>
+</body>
+
+</html>
