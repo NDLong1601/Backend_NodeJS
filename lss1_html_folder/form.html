@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        thuộc tính của form
+    action : giá trị 1 đường dẫn
+    target : chỉ định nơi phản hồi sau khi gửi ( _blank, _self)
+    method : get & post chỉ định giao thức HTTP sẽ được sử dụng khi gửi biểu mẫu
+            GET : nối dữ liệu biểu mẫu vào URL theo cặp name/value
+                  không bao h sử dụng phương thức get để gửi dữ liệu bảo mật
+                  độ dài url bị giới hạn 2048 kí tự
+            POST: gửi dữ liệu đi không hiện URL
+                  không có giới hạn về kích thước
+                  sử dụng để gửi lượng dữ liệu lớn
+    autocomplete : tính năng tự động điền, gợi ý các giá trị đã nhập trước đó ( on/off )
+    novalidate   : không cần kiểm tra tính chính xác của dữ liệu khi gửi đi
+
+        Element form
+    input : hiển thị theo nhiều cách, tùy thuộc vào thuộc tính type
+            mặc định là text
+    label : xác định nhãn cho element
+            thuộc tính for của label phải trùng với id của Element để nó liên kết lại
+    select: Hiển thị danh sách thả xuống (dropdown)
+            các thẻ <option> là các tùy chọn để người dùng có thể chọn
+            để thêm 1 lựa chọn làm mặc định thì thêm thuộc tính selected
+    textarea: dùng để nhập nhiều dòng
+    
+    -->
+    <form action="https://www.w3schools.com/action_page.php" target="_self" method="GET">
+        <label for="fullName">FullName</label>
+        <input type="text" id="fullName" name="full_name"><br>
+        <label for="password">password</label>
+        <input type="password" id="password" name="password"><br>
+        <select name="color" id="color">
+            <option>-- Lua chon --</option>
+            <option value="red">red</option>
+            <option value="orange">orange</option>
+            <option value="black">black</option>
+            <option value="green">green</option>
+        </select><br>
+        <label for="note">Ghi chú :</label><br>
+        <textarea name="note" id="note"></textarea><br>
+        <input type="datetime-local" name="" id="">
+        <input type="file" name="" id="">
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
